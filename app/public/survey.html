@@ -14,7 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6b33305948.js"></script>
 
-    <title>Friend Finder</title>
+    <title>FF | Survey</title>
+
 </head>
 
 <body>
@@ -25,106 +26,154 @@
         <form>
             <div class="form-group">
                 <label>Name (Required): </label>
-                <input type="text" class="form-control" placeholder="Enter Name">
+                <input id="nameInput" type="text" class="form-control" placeholder="Enter Name">
             </div>
             <div class="form-group">
                 <label>Link to photo Image (Required): </label>
-                <input type="text" class="form-control" placeholder="Image URL">
+                <input id="imageUrlInput" type="text" class="form-control" placeholder="Image URL">
             </div>
         </form>
-        <h4>Question 1:</h4>
-        <h5>first question of many questions</h5>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" name= "Q1" value="1">1</a>
-                <a class="dropdown-item" name= "Q1" value="2">2</a>
-                <a class="dropdown-item" name= "Q1" value="3">3</a>
-                <a class="dropdown-item" name= "Q1" value="4">4</a>
-                <a class="dropdown-item" name= "Q1" value="5">5</a>
-            </div>
-            <hr>
-        </div>
-        <h4>Question 2:</h4>
-        <h5>first question of many questions</h5>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" name= "Q1" value="1">1</a>
-                <a class="dropdown-item" name= "Q1" value="2">2</a>
-                <a class="dropdown-item" name= "Q1" value="3">3</a>
-                <a class="dropdown-item" name= "Q1" value="4">4</a>
-                <a class="dropdown-item" name= "Q1" value="5">5</a>
-            </div>
-            <hr>
-        </div>
-        <h4>Question 3:</h4>
-        <h5>first question of many questions</h5>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" name= "Q1" value="1">1</a>
-                <a class="dropdown-item" name= "Q1" value="2">2</a>
-                <a class="dropdown-item" name= "Q1" value="3">3</a>
-                <a class="dropdown-item" name= "Q1" value="4">4</a>
-                <a class="dropdown-item" name= "Q1" value="5">5</a>
-            </div>
-            <hr>
-        </div>
-        <h4>Question 4:</h4>
-        <h5>first question of many questions</h5>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" name= "Q1" value="1">1</a>
-                <a class="dropdown-item" name= "Q1" value="2">2</a>
-                <a class="dropdown-item" name= "Q1" value="3">3</a>
-                <a class="dropdown-item" name= "Q1" value="4">4</a>
-                <a class="dropdown-item" name= "Q1" value="5">5</a>
-            </div>
-            <hr>
-        </div>
-        <h4>Question 5:</h4>
-        <h5>first question of many questions</h5>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" name= "Q1" value="1">1</a>
-                <a class="dropdown-item" name= "Q1" value="2">2</a>
-                <a class="dropdown-item" name= "Q1" value="3">3</a>
-                <a class="dropdown-item" name= "Q1" value="4">4</a>
-                <a class="dropdown-item" name= "Q1" value="5">5</a>
-            </div>
-            <hr>
-        </div>
-        
+        <h3><strong>Question 1</strong></h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3><strong>Question 2</strong></h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
 
+        <h3><strong>Question 3</strong></h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3><strong>Question 5</strong></h3>
+        <h4>People can rarely upset you.</h4>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3><strong>Question 8</strong></h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3><strong>Question 9</strong></h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+            not.</h4>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3><strong>Question 10</strong></h3>
+        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+        <button id="submitButton" type="button" class="btn btn-primary">Submit</button>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script>
+        //var newFriend = {};
+        $("#submitButton").on("click", (event) => {
+            var questionsArr = [];
+            event.preventDefault();
+            for (var i = 1; i < 11; i++) {
+                questionsArr.push(parseInt($("#q" + i).val()));
+            }
+            const newFriend = {
+                name: $("#nameInput").val().trim(),
+                photo: $("#imageUrlInput").val().trim(),
+                scores: questionsArr
+            };
+            //console.log("this is my friend: " + JSON.stringify(newFriend));
+
+            $.post("/api/friend", JSON.stringify(newFriend), (data) => {
+                console.log("this data: " + data);
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>

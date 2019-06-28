@@ -1,13 +1,14 @@
-app.get("/api/friends/:friends", (req, res) => {
-    const chosen = req.params.friends;
-  
-    console.log(chosen);
-  
-    for (let i = 0; i < friends.length; i++) {
-      if (chosen === friends[i].routeName) {
-        return res.json(friends[i]);
-      }
-    }
-  
-    return res.json(false);
-  });
+const path = require("path");
+
+module.exports = (app) => {
+
+app.get("/survey", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/survey.html"));
+});
+
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/home.html"));
+});
+
+}

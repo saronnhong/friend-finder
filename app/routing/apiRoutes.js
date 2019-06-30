@@ -26,9 +26,9 @@ module.exports = (app) => {
       var compatScore = totalDiff(req.body.scores, friendsArr[i].scores);
       compatArr.push(compatScore);
     }
-    console.log(compatArr);
+    //console.log(compatArr);
     var mostCompatRating = Math.min(...compatArr);
-    console.log("min rating: " + mostCompatRating);
+    //console.log("min rating: " + mostCompatRating);
     var bestFriendInfoArr = [];
     for (var i = 0; i < friendsArr.length; i++) {
       if (friendsArr[i].compatibilityRating === mostCompatRating) {

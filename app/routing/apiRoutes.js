@@ -5,11 +5,11 @@ module.exports = (app) => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  app.get("/api/friend", (req, res) => {
+  app.get("/api/friends", (req, res) => {
     return res.json(friendsArr);
   });
 
-  app.post("/api/friend", (req, res) => {
+  app.post("/api/friends", (req, res) => {
     var newIntArr = [];
     var compatArr = [];
     for (var i = 0; i < req.body.scores.length; i++) {

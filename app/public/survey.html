@@ -220,7 +220,7 @@
                 compatibilityRating: 0
             };
 
-            $.post("/api/friend", newFriend, (data) => {
+            $.post("/api/friends", newFriend, (data) => {
                 $("#bestFriendName").text(data[0]);
                 $("#bestFriendName").append("<br> <img src=" + data[1] + " width= '450px' >");
                 $("#exampleModal").modal("show");

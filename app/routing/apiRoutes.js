@@ -2,17 +2,14 @@ module.exports = (app) => {
   const friendsArr = require("../data/friends");
   const express = require("express");
 
-  //const app = express();
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
   app.get("/api/friend", (req, res) => {
     return res.json(friendsArr);
-    //res.send("display a JSON of all possible friends");
   });
 
   app.post("/api/friend", (req, res) => {
-
     var newIntArr = [];
     var compatArr = [];
     for (var i = 0; i < req.body.scores.length; i++) {
@@ -26,20 +23,17 @@ module.exports = (app) => {
       var compatScore = totalDiff(req.body.scores, friendsArr[i].scores);
       compatArr.push(compatScore);
     }
-    //console.log(compatArr);
+    
     var mostCompatRating = Math.min(...compatArr);
-    //console.log("min rating: " + mostCompatRating);
+   
     var bestFriendInfoArr = [];
     for (var i = 0; i < friendsArr.length; i++) {
       if (friendsArr[i].compatibilityRating === mostCompatRating) {
-        //console.log("Your best FRIEND is " + friendsArr[i].name);
-        //console.log("Your BF URL is " + friendsArr[i].photo);
         bestFriendInfoArr.push(friendsArr[i].name);
         bestFriendInfoArr.push(friendsArr[i].photo);
       }
     }
     friendsArr.push(req.body);
-    //console.log(friendsArr);
 
     res.json(bestFriendInfoArr);
   });

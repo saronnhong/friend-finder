@@ -6,24 +6,21 @@ Friend Finder is a dating app. This full stack site takes the results from the u
 ## Usage
 The Friend Finder app is deployed on Heroku. User must go to https://friend-finder-86.herokuapp.com/ to view the app. This will load the homepage which allows the user to start the survery by pressing the "Go to survery" button or going to https://friend-finder-86.herokuapp.com/survey. User must fill out the form and then hit submit. Friend finder will then compare the results from the users' survey with results from other users and find a best match and return the result in a modal window. Users' survey results are with the other users' results.
 
-### The Apps:/commands
-* Customer View: Displays a list of items available on the BAmazon store front. User is able to select which item and quantity they would like to purchase. The store front's inventory is updated. Customer recieves a bill for the cost of the purchase. 
-* Manager View: Display a list of all products available for sale. Managers are able to check which items have low inventory, add more to the inventory, and add new products to the store front.
-* Supervisor ViewL Display a table of the Product Sales results for each department. Supervisor is able to see the Product Sales, Over head costs, and Total Profits of each department. Supervisor is able to create new departments and have it displayed with the other departments.
+### The Routes
+* "/survey" will route the user to the survey page
+* "/" or anything else that is not defined will route the user to the home page
+* "/api/friends" will route the user to a list of all possible friends in JSON format
 
 ## Examples
 ### Images:
-![alt text](assets/images/bamazonCustomer_ss.png "Customer")
-Screenshot of the BAmazon Customer app
+![alt text](assets/images/title.png "homepage")
+Screenshot of the Homepage
 
-![alt text](assets/images/bamazonManager_ss.png "Manager")
-Screenshot of the BAmazon Manager app
+![alt text](assets/images/survey.png "survey")
+Screenshot of the Survey
 
-![alt text](assets/images/bamazonSupervisor_ss.png "Supervisor")
-Screenshot of the BAmazon Supervisor app
-
-### Video:
-* [Demo](https://youtu.be/-OHJib2HmZY)
+![alt text](assets/images/bestmatch.png "modal")
+Screenshot of the Best Match Results 
 
 ## Technologies
 The Friend Finder app was created using these technologies

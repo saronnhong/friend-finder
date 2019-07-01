@@ -9,9 +9,7 @@ app.use(express.json());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
-
 app.listen(PORT, () => {
   console.log("Listening at http://localhost:" + PORT)
-  
 });
 

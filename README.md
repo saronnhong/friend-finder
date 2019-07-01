@@ -34,7 +34,7 @@ The Friend Finder app was created using these technologies
 * 
 
 ## GITHUB
-[github link](https://github.com/saronnhong/bamazon)
+[github link](https://github.com/saronnhong/friend-finder)
 
 ## My Role
 My role in the app development was to create the Friend Finder app based on instructions from UCSD Extension Full Stack Bootcamp. 
